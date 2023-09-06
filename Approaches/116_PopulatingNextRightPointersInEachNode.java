@@ -30,6 +30,7 @@ class Solution {
 
         while(leftMost.left != null){
             Node current = leftMost;
+            
             while(current != null){
                 current.left.next = current.right;
                 if(current.next != null){
